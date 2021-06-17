@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Mukta:wght@200;300&display=swap");
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    color: #8b8b8b;
+    font-family: "Montserrat", serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#logo {
+    height: 150px;
+}
+#logo img {
+    height: 150px;
+}
+#header {
+    box-sizing: border-box;
+    height: 150px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 2.2rem;
+}
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+@media (max-width: 600px)  {
+    #btn-mobile {
+        display: block;
+        border: none;
+        font-size: 1.5rem;
+        color: #8b8b8b;
+        cursor: pointer;
+        padding: .5rem 1rem;
+        background-color: white;
+    }
+    #menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 150px;
+        right: 0px;
+        background-color: white;
+        height: calc(50vh - 150px);
+        z-index: 1000;
+    }
+    #nav.active #menu {
+        display: block;
+        text-align: center;
+    }
+    #logo img {
+        margin-left: 4rem;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+}
