@@ -1,0 +1,319 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Mukta:wght@200;300&display=swap");
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    color: #8b8b8b;
+    font-family: "Montserrat", serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#logo {
+    height: 120px;
+}
+#logo img {
+    height: 100%;
+}
+#header {
+    box-sizing: border-box;
+    height: 150px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 2.2rem;
+}
+#menu a {
+    display: block;
+    padding: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+.header-3{
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.white-shadow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255 255 255 / 30%);
+}
+.banner h1{
+    color: #eb6524;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 3.5rem;
+    font-family: "Montserrat", serif;
+    font-weight: 250;
+    /* opacity: 0;
+    animation: moveBanner 1s 0.5s forwards; */
+}
+.banner p{
+    color: #1f405b;
+    font-size: 1.5rem;
+    font-family: "Mukta", serif;
+    font-weight: 500;
+    /* opacity: 0; */
+    /* animation: moveBanner 1s 0.9s forwards; */
+}
+@keyframes moveBanner{
+    0%{
+        transform: translateY(-30) rotateY(-30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+.informacoes-gerais{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.foto-luciano {
+    margin-top: 8rem;
+    width: 50%;
+    height: 34rem;
+    background-color: #59768c;
+    left: 2rem;
+    display: flex;
+}
+.foto-luciano img{
+    width: 50%;
+    height: 20rem;
+    position: relative;
+    left: 14rem;
+    display: flex;
+    opacity: 0.70;
+}
+.descricao-foto {
+    color: white;
+    margin-top: 20rem;
+    margin-right: 5rem;
+    font-family: "Montserrat", serfif;
+    display: flex;
+    height: 4rem;
+}
+.descricao-foto h1{
+    color: white;
+    font-family: "Montserrat", serfif;
+    display: flex;
+    font-size: 1rem;
+}
+
+.infos {
+    margin-top: 8rem;
+    width: 50%;
+    height: 34rem;
+    overflow: hidden;
+    text-align: center;
+    right: 10rem;
+    background-color: #d3dbe0;
+    font-size: 1.5rem;
+}
+.infos h1 {
+    margin-top: 5rem;
+    letter-spacing: .1rem;
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Montserrat", serfif;
+}
+.infos p {
+    letter-spacing: .05rem;
+    margin-bottom: 50px;
+    color: #1f405b;
+    font-family: "Mukta", serif;
+}
+.infos button {
+    background-color: #eb6524;
+    color: white;
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: "Montserrat", serfif;
+    border-radius: 5px;
+}
+.videos {
+    background-color: white;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    bottom: 3rem;
+}
+.video1 {
+    width: 50%;
+    height: 100%;
+    left: 6rem;
+    top: 7rem;
+    bottom: 3rem;
+    overflow: hidden;
+    position: relative;
+}
+.video2 {
+    width: 50%;
+    height: 100%;
+    left: 4rem;
+    top: 7rem;
+    bottom: 3rem;
+    overflow: hidden;
+    position: relative;
+}
+.tituloyt {
+    background-color: white;
+    height: 32rem;
+    overflow: hidden;
+    position: relative;
+    font-family: "Montserrat", serfif;
+    font-size: 1.5rem;
+    color: #1f405b;
+    top: 25rem;
+    margin-left: 22rem;
+}
+
+.footer-content {
+    width: 100%;
+    height: 24rem;
+    background: #1f405b; 
+    background: -webkit-linear-gradient(to bottom, white, #1f405b);  
+    background: linear-gradient(to bottom, white, #1f405b);
+    justify-content: center;
+    position: relative;
+    color: #8b8b8b;
+}
+.footer1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    margin-top: 7rem;
+    width: 80%;
+    margin-left: 10rem;
+}
+.footer1 i {
+    margin-top: 7rem;
+    font-size: 1.5rem;
+    width: 10%;
+    text-align: right;
+}
+
+.footer1 h1 {
+    font-family: "Montserrat", serfif;
+    font-size: 1.5rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right: 0.1rem;
+    width: 35%;
+}
+.footer1 h2 {
+    font-family: "Montserrat", serfif;
+    font-size: 1.5rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    width: 30%;
+}
+.footer2{
+    height: 50%;
+    width: 90%;
+    margin-right: 8rem;
+    display: flex;
+}
+.footer2 h1{
+    font-family: "Montserrat", serfif;
+    margin-left: 13rem;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    color: beige;
+    margin-top: 5rem;
+    
+}
+.footer2 button{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 8rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #eb6524;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    font-family: "Montserrat", serfif;
+    border-radius: 5px;
+}
+.faixa {
+    height: 0.07rem;
+    width: 100%;
+    background-color: #8b8b8b;
+    margin-top: 1.2rem;
+}
+.descricao-timeline{
+    height: 20px;
+    text-align: center;
+    margin-top: 5rem;
+}
+.descricao-timeline h1{
+    font-size: 1.3rem;
+    font-family: "Montserrat", serfif;
+    color: #1f405b;
+}
+.container2 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline ul {
+    list-style: none;
+}
+.timeline ul li {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #d3dbe0;
+    margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+.timeline-content h1 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", serfif;
+    color:white;
+    letter-spacing: .1rem;
+}
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: "Mukta", serif;
+    color: #1f405b;
+}
